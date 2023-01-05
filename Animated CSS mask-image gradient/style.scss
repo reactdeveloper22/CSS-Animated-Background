@@ -1,0 +1,32 @@
+:root {
+    --direction: -45deg; 
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    position: relative;
+  }
+  
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+  }
+  
+  .background {
+    background-image: url(https://source.unsplash.com/1600x900/?day);
+  }
+  
+  .foreground {
+    background-image: url(https://source.unsplash.com/1600x900/?night);
+    mask-image: linear-gradient(var(--direction), rgba(0,0,0,1) 40%, rgba(0,0,0,0) 60%);
+    mask-position: 50% 50%;
+  }

@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    overflow: hidden;
+    background: black;
+    background: radial-gradient(circle at center, #222, black 30%);
+    
+  }
+  
+  .wrap {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 500px;
+   
+  }
+  
+  @function posOrNeg(){
+    @return random() * 2 - 1;
+  }
+  
+  
+  $total: 200;
+  $size: 30;
+  
+  .c {
+    position: absolute;
+    width: $size+px;
+    height: $size+px;
+    margin-top: -$size/2+px;
+    margin-left: -$size/2+px;
+    transform: translate3d(50vw,50vh, -1000px);
+    border-radius: 50%;
+  }
+  
+  @for $i from 1 through $total {
+    $color: hsl(($i * .1)+70, 100%, 50%);
+    
+    .c:nth-child(#{$i}){
+      animation: anim#{$i} 1.5s infinite alternate;
+      animation-delay: $i * -.015s;
+      background: $color;
+      background: radial-gradient(circle at top left, lighten($color, 15%), $color);
+      box-shadow: 0 0 25px 3px lighten($color, 5%);
+      border: 1px solid $color;
+    }
+    @keyframes anim#{$i}{
+      80% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate3d(random(100)+vw, random(100)+vh, 0);
+        opacity: 0;
+      }
+    }
+  }
