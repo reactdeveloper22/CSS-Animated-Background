@@ -1,6 +1,6 @@
 # CSS Animated Background Collection.
 
-Cascading Style Sheets (CSS) can help you do more than just determine colors, fonts, or the positioning of certain elements. You can use CSS to create trendy animations and visual effects. You don’t need to know JavaScript or even HTML and create different kinds of animations and environments on your website.
+Cascading Style Sheets (CSS) can help you do more than just determine colors, fonts, or the positioning of certain elements. You can use CSS to create trendy animations and visual effects. You don’t need to know JavaScript or even HTML and create different kinds of animations and environments on your website
 
 ### Credit...
 #### Pure CSS Particle Animation
