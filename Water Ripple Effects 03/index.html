@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Water Ripple Effect</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+      <header>
+        <h1>“Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.”</h1>
+        <!--<h2>A nice Jquery Plugin for your Website</h2>-->
+      </header>
+    </section>
+
+    <script script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+    <script>
+		$('body').ripples({
+			resolution: 512,
+			dropRadius: 20, //px
+			perturbance: 0.04,
+		});
+    </script>
+</body>
+</html>
