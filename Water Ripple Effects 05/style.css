@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+}
+body {
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-image: url(https://i.postimg.cc/HnHpNBzM/forza-horizon-5-1920x1080-947875-mm-90.jpg);
+  background-size: cover;
+  background-position: center top;
+  overflow-x: hidden;
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+body:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+section {
+  display: inline-block;
+  vertical-align: middle;
+  padding:  100px;
+  max-width: 500px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+header{
+  cursor: none;
+}
